@@ -1,21 +1,36 @@
+@font-face {
+	font-family: "Devant Horgen";
+	src: url("Devant Horgen.otf");
+}
+
+@font-face{
+    font-family: "PlayfairDisplay";
+    src: url('PlayfairDisplay-VariableFont_wght.ttf');
+}
+
 *{
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 }
+
+/* headerRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
 a {
 	color: inherit;
 	text-decoration: none;
 }
+
 .medsos {
 	padding: 5px 0;
-	background-color: #148f77
+	background-color: rgba(243, 93, 7, 0.938)
 }
+
 .medsos ul li {
-	display: inline-block;
-	color: #fff;
-	margin-right: 10px; 
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
 }
+
 .container {
 	width: 80%;
 	margin: 0 auto;
@@ -25,67 +40,329 @@ a {
 	display: block;
 	clear: both;
 }
+
+header {
+	background-color:#925409;
+}
+
 header h1 {
 	float: left;
 	padding: 15px 0;
-	color: #148f77;
+	color: cornsilk;
 }
+
 header ul {
-	float: right; 
+    list-style: none;
 }
+
+header ul {
+	float: right;
+	background-color:#925409; 
+}
+
 header ul li {
 	display: inline-block;
 }
+
 header ul li a {
 	padding: 25px 20px;
 	display: inline-block;
+	color: blanchedalmond;
+	font-size: 18px;
+    font-weight: lighter;
+	margin-top: 14%;
+	margin-left: 1px;
+    padding: 0 35px;
+    border: 2px solid;
 }
+
 header ul li  a:hover {
-	background-color: #148f77;
+	background-color: rgba(243, 93, 7, 0.938);
 }
+
 .active {
-	background-color: #148f77;
+	background-color: rgba(243, 93, 7, 0.938);
 }
-.banner {
-	height: 60vh;
-	border:1px solid;
-	background-image: url('../img/banner.jpg');
-	display: flex;
-	justify-content: center;
-	align-items: center; 
+/* headerRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */
+
+
+
+/*IMAGE-------------------------------------------------------------HOMEPAGE */
+.banner{
+    margin-left: 30px;
+    margin-right: 30px;
+	height: 530px;
+	border: 1px solid;
+    background-image: url(../img/coffeeShop.jpeg);
+    background-size: cover;
+	/*border: 1px solid;*/
 }
+
+.banner p {
+	font-family: "Devant Horgen";
+}
+ 
+/*gimana agar tulisan mabar agak turun*/
+#mabar {
+    color: #fff;
+    font-size: 120px;
+    letter-spacing: 5px;
+    margin-left: 50px;
+	text-shadow: 2px 2px 5px black;
+}
+
+#inIshpot {
+    margin-left: 50px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color:  orange;
+	text-shadow: 2px 2px 3px black;
+}
+
+.banner p a {
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 50px;
+	text-decoration: none;
+}
+
+#linkPesan {
+    margin-left: 50px;
+    width: 190px;
+    background-color: #873600;
+    border-radius: 10%;
+    box-shadow: 4px 4px 5px;
+    margin-top: 30px;
+	margin-bottom: 74px;
+}
+
+#garisDekor{
+    padding: 55px;
+    background-image: linear-gradient(transparent 0.01%, #873600);
+	border-style: shadow
+}
+/*IMAGE--------------------------------------------------------------------------HOMEPAGE */
+
+
+
+
 section {
-	padding:50px 0; 
+	padding:50px 0;
 }
+
+section h3 {
+	text-align: center;
+	font-size: 30px;
+	padding:20px 0;
+	color:  #148f77;
+	margin-bottom: 20px;
+}
+
+.about {
+	margin-left: 70px;
+	margin-right: 70px;
+	border: 1px solid;
+	display: grid;
+	grid-template-columns: 50% auto;
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+.about img {
+	width: 500px;
+	display: block;
+	margin: auto;
+}
+
+.paragraf{
+	width: 430px;
+	display: block;
+	margin: auto;
+}
+
+.about p {
+	text-align: justify;
+}
+
+.information ul li {
+	font-family: 'Devant Horgen';
+	font-size: 25px;
+	padding-left: 40px;
+	letter-spacing: 1px;
+	/*padding-right: 10px;*/
+}
+
+section {
+	padding: 50px 0;
+}
+
 section h3 {
 	text-align: center;
 	padding:20px 0;
 	color:  #148f77;
 	margin-bottom: 20px;
 }
-.about {
-	color: #666;
-	word-spacing: 2px;
-	line-height: 25px;
-}
-}
-.box {
-	border:1px solid; 
-	color: #f9f9f9;
-}
-}
-.box .col-4 {
-	width:25%;
-	padding:20px;
-	box-sizing: border-box;
-	border:1px solid;
-}
-.icon {
-	width: 70px;
-	height: 70px;
+
+.pj {
 	border: 1px solid;
-	border-radius: 50%;
 }
-.box .col-4 h4 {
-	margin: 10px 0;
+
+.product{
+    height: 190px;
+    display: grid; 
+	grid-template-columns: repeat(4, auto);
+    background-color: black;
+	padding-top: 20px;
+}
+
+.item img {
+	width: 300px;
+}
+.item p {
+    width: 300px;
+    text-align: center;
+	color: white;
+	position: relative;
+	text-shadow: 2px 2px 3px #873600;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color:  #148f77;
+	margin-bottom: 20px;
+}
+
+.menu {
+	border: 1px solid;
+}
+
+.gambarMenu {
+	width: 80px;
+	padding: 0 10px;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gambarMenu .fotoMenu img {
+	width: 300px;
+}
+
+.fotoMenu {
+	border: 3px solid;
+	margin: 30px;
+}
+
+.fotoMenu h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.fotoMenu h4 {
+    padding: 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fotoMenu p {
+    padding: 10px;
+    margin-left: 1px;
+    margin-top: 1px;
+    text-align: left;
+    text-align: right;
+    text-align: justify;
+    position: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+	padding: 50px 0;
+}
+
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color:  #148f77;
+	margin-bottom: 20px;
+}
+
+.event {
+	margin-bottom: 200px;
+	border: 1px solid;
+}
+
+.event h1 {
+	margin-bottom: 10px;
+}
+
+.gambarEvent {
+	width: 80%;
+	padding: 0 65px;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gambarEvent .fotoEvent img {
+    width: 300px;
+}
+
+.fotoEvent {
+	margin: 10px;
+}
+
+.fotoEvent h1 {
+	font-size: 20px;
+}
+
+.fotoEvent p {
+	margin-bottom: 10px;
+}
+
+.fotoEvent a {
+    border: 1px solid #B7950B ;
+    padding: 5px;
+	position: center;
+    color: white;
+    background: #B7950B ;
+    border-radius: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.information ul {
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    display: grid; 
+    background-color: black;
+    color: white;
+    padding-left: 130px;
+    padding-right: 130px;
+    grid-template-columns: repeat(3, auto);   
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: PlayfairDisplay;
+}
+
+.information ul li{
+    font-family: PlayfairDisplay;
+    padding-left: 25px;
+    /*padding-right: 10px;*/
 }
